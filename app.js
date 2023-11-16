@@ -71,6 +71,8 @@ app.get('/cart', (req, res) => {
     const qty = cart[animalId];
     animalDetails.qty =  qty;
 
+    console.log(qty);
+
     const subtotal = qty * animalDetails.price;
     animalDetails.subtotal = subtotal;
 
